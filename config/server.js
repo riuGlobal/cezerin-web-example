@@ -11,7 +11,7 @@ const dbUrl =
 	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
 const clientUrl = process.env.CLIENT_URL || 'http://localhost:3001';
-const serverUrl = process.SERVER_URL || 'http://localhost:3001';
+const serverUrl = process.env.SERVER_URL || 'http://localhost:3001';
 module.exports = {
 	// used by Store (server side)
 	apiBaseUrl: `${serverUrl}/api/v1`,
