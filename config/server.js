@@ -11,9 +11,10 @@ const dbUrl =
 	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
 const clientUrl = process.env.CLIENT_URL || 'http://localhost:3001';
+const serverUrl = process.SERVER_URL || 'http://localhost:3001';
 module.exports = {
 	// used by Store (server side)
-	apiBaseUrl: `${clientUrl}/api/v1`,
+	apiBaseUrl: `${serverUrl}/api/v1`,
 
 	// used by Store (server and client side)
 	ajaxBaseUrl: `${clientUrl}/ajax`,
