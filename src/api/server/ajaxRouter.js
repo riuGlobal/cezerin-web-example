@@ -19,7 +19,7 @@ const ajaxRouter = express.Router();
 const TOKEN_PAYLOAD = { email: 'store', scopes: ['admin'] };
 const STORE_ACCESS_TOKEN = jwt.sign(TOKEN_PAYLOAD, serverSettings.jwtSecretKey);
 
-console.log('Build cezerin client', serverSettings.apiBaseUrl);
+console.log('====-Build cezerin client', serverSettings.apiBaseUrl);
 const api = new CezerinClient({
 	apiBaseUrl: serverSettings.apiBaseUrl,
 	apiToken: STORE_ACCESS_TOKEN
