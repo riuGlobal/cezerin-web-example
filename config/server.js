@@ -12,6 +12,9 @@ const dbUrl =
 
 const clientUrl = process.env.CLIENT_URL || 'http://localhost:3001';
 const serverUrl = process.env.SERVER_URL || 'http://localhost:3001';
+
+console.log(`client url => ${clientUrl} `);
+console.log(`server url => ${serverUrl} `);
 module.exports = {
 	// used by Store (server side)
 	apiBaseUrl: `${serverUrl}/api/v1`,
