@@ -1,4 +1,4 @@
-FROM node:dubnium-buster
+FROM node:dubnium-stretch-slim
 LABEL mainteiner='Ricardo David Ortiz'
 WORKDIR /var/www/html/cezerin-web-example
 COPY package*.json ./
