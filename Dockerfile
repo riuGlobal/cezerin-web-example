@@ -1,4 +1,4 @@
-FROM node:erbium-alpine
+FROM node:erbium-buster-slim
 LABEL mainteiner='Ricardo David Ortiz'
 WORKDIR /var/www/html/cezerin-web-example
 COPY package*.json ./
