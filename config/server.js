@@ -10,7 +10,7 @@ const dbCred =
 const dbUrl =
 	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
-const clientUrl = process.env.REACT_APP_CLIENT || 'http://localhost:3001';
+const clientUrl = process.env.REACT_APP_CLIENT_URL || 'http://localhost:3001';
 const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:3001';
 
 console.log(`client url => ${clientUrl} `);
