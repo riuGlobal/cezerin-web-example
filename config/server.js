@@ -15,7 +15,7 @@ const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:3001';
 
 console.log(`client url => ${clientUrl} `);
 console.log(`server url => ${serverUrl} `);
-console.log(`----TEST => ${process.env.NODE_ENV}`);
+console.log(`node environment => ${process.env.NODE_ENV}`);
 module.exports = {
 	// used by Store (server side)
 	apiBaseUrl: `${serverUrl}/api/v1`,
