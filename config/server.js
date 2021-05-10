@@ -10,12 +10,18 @@ const dbCred =
 const dbUrl =
 	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
+const clientUrl = process.env.REACT_APP_CLIENT_URL || 'http://localhost:3001';
+const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:3001';
+
+console.log(`client url => ${clientUrl} `);
+console.log(`server url => ${serverUrl} `);
+console.log(`node environment => ${process.env.NODE_ENV}`);
 module.exports = {
 	// used by Store (server side)
-	apiBaseUrl: `http://localhost:3001/api/v1`,
+	apiBaseUrl: `${serverUrl}/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `http://localhost:3001/ajax`,
+	ajaxBaseUrl: `${clientUrl}/ajax`,
 
 	// Access-Control-Allow-Origin
 	storeBaseUrl: `http://localhost:3000`,
