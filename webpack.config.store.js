@@ -133,6 +133,9 @@ module.exports = {
 			),
 			'process.env.REACT_APP_SERVER_URL': JSON.stringify(
 				process.env.REACT_APP_SERVER_URL
+			),
+			'process.env.REACT_APP_LOYALTY_URL': JSON.stringify(
+				process.env.REACT_APP_LOYALTY_URL
 			)
 		})
 	],

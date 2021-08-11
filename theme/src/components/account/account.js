@@ -382,7 +382,7 @@ class Account extends React.Component {
 		this.setState({ profileSection: 2 });
 	};
 
-	handlePremios = () => {
+	handlePrizes = () => {
 		this.setState({ profileSection: 3 });
 	};
 
@@ -403,6 +403,9 @@ class Account extends React.Component {
 			initialValues
 		} = this.props;
 
+		const customerId =
+			customerProperties && customerProperties.customer_settings.id;
+		const loyaltyUrl = `${process.env.REACT_APP_LOYALTY_URL}?user=${customerId}`;
 		Lscache.flushExpired();
 
 		const accountInputField = 'account-field';
@@ -617,10 +620,10 @@ class Account extends React.Component {
 							</li>
 							<li
 								className={this.state.profileSection === 3 ? isActive : ''}
-								onClick={this.handlePremios}
+								onClick={this.handlePrizes}
 							>
 								{/* <Link to='/loyalty'> */}
-								Premios
+								Prizes
 								{/* </Link > */}
 							</li>
 							<li>
@@ -995,9 +998,10 @@ class Account extends React.Component {
 					{this.state.profileSection === 3 && (
 						<div className={accountProfileContainer}>
 							<iframe
+								title="loyaltyCard"
+								src={loyaltyUrl}
 								style={{ width: '100%' }}
-								src="http://localhost:8101"
-							></iframe>
+							/>
 						</div>
 					)}
 					<div className={accountButtonContainer}>
