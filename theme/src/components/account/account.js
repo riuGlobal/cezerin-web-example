@@ -66,10 +66,12 @@ class Account extends React.Component {
 				address1:
 					typeof this.props.customerProperties.customer_settings.addresses !==
 						'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.address1 !== 'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.address1 !== null
 						? this.props.customerProperties.customer_settings.addresses[0]
@@ -78,10 +80,12 @@ class Account extends React.Component {
 				address2:
 					typeof this.props.customerProperties.customer_settings.addresses !==
 						'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.address2 !== 'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.address2 !== null
 						? this.props.customerProperties.customer_settings.addresses[0]
@@ -90,22 +94,25 @@ class Account extends React.Component {
 				city:
 					typeof this.props.customerProperties.customer_settings.addresses !==
 						'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
-					this.props.customerProperties.customer_settings.addresses[0]
-						.city !== 'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
-					this.props.customerProperties.customer_settings.addresses[0]
-						.city !== null
-						? this.props.customerProperties.customer_settings.addresses[0]
-								.city
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].city !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].city !==
+						null
+						? this.props.customerProperties.customer_settings.addresses[0].city
 						: '',
 				postal_code:
 					typeof this.props.customerProperties.customer_settings.addresses !==
 						'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.postal_code !== 'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.postal_code !== null
 						? this.props.customerProperties.customer_settings.addresses[0]
@@ -114,22 +121,25 @@ class Account extends React.Component {
 				state:
 					typeof this.props.customerProperties.customer_settings.addresses !==
 						'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
-					this.props.customerProperties.customer_settings.addresses[0]
-						.state !== 'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
-					this.props.customerProperties.customer_settings.addresses[0]
-						.state !== null
-						? this.props.customerProperties.customer_settings.addresses[0]
-								.state
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].state !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].state !==
+						null
+						? this.props.customerProperties.customer_settings.addresses[0].state
 						: '',
 				country:
 					typeof this.props.customerProperties.customer_settings.addresses !==
 						'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.country !== 'undefined' &&
-					this.props.customerProperties.customer_settings.addresses.length > 0 &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
 					this.props.customerProperties.customer_settings.addresses[0]
 						.country !== null
 						? this.props.customerProperties.customer_settings.addresses[0]
@@ -138,77 +148,87 @@ class Account extends React.Component {
 			},
 			shipping_address: {
 				address1:
-				typeof this.props.customerProperties.customer_settings.addresses !==
+					typeof this.props.customerProperties.customer_settings.addresses !==
 						'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.address1 !== 'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.address1 !== null
-					? this.props.customerProperties.customer_settings.addresses[0]
-							.address1
-					: '',
-			address2:
-				typeof this.props.customerProperties.customer_settings.addresses !==
-					'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.address2 !== 'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.address2 !== null
-					? this.props.customerProperties.customer_settings.addresses[0]
-							.address2
-					: '',
-			city:
-				typeof this.props.customerProperties.customer_settings.addresses !==
-					'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.city !== 'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.city !== null
-					? this.props.customerProperties.customer_settings.addresses[0]
-							.city
-					: '',
-			postal_code:
-				typeof this.props.customerProperties.customer_settings.addresses !==
-					'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.postal_code !== 'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.postal_code !== null
-					? this.props.customerProperties.customer_settings.addresses[0]
-							.postal_code
-					: '',
-			state:
-				typeof this.props.customerProperties.customer_settings.addresses !==
-					'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.state !== 'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.state !== null
-					? this.props.customerProperties.customer_settings.addresses[0]
-							.state
-					: '',
-			country:
-				typeof this.props.customerProperties.customer_settings.addresses !==
-					'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.country !== 'undefined' &&
-				this.props.customerProperties.customer_settings.addresses.length > 0 &&
-				this.props.customerProperties.customer_settings.addresses[0]
-					.country !== null
-					? this.props.customerProperties.customer_settings.addresses[0]
-							.country
-					: ''
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.address1 !== 'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.address1 !== null
+						? this.props.customerProperties.customer_settings.addresses[0]
+								.address1
+						: '',
+				address2:
+					typeof this.props.customerProperties.customer_settings.addresses !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.address2 !== 'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.address2 !== null
+						? this.props.customerProperties.customer_settings.addresses[0]
+								.address2
+						: '',
+				city:
+					typeof this.props.customerProperties.customer_settings.addresses !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].city !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].city !==
+						null
+						? this.props.customerProperties.customer_settings.addresses[0].city
+						: '',
+				postal_code:
+					typeof this.props.customerProperties.customer_settings.addresses !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.postal_code !== 'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.postal_code !== null
+						? this.props.customerProperties.customer_settings.addresses[0]
+								.postal_code
+						: '',
+				state:
+					typeof this.props.customerProperties.customer_settings.addresses !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].state !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0].state !==
+						null
+						? this.props.customerProperties.customer_settings.addresses[0].state
+						: '',
+				country:
+					typeof this.props.customerProperties.customer_settings.addresses !==
+						'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.country !== 'undefined' &&
+					this.props.customerProperties.customer_settings.addresses.length >
+						0 &&
+					this.props.customerProperties.customer_settings.addresses[0]
+						.country !== null
+						? this.props.customerProperties.customer_settings.addresses[0]
+								.country
+						: ''
 			}
 		});
 		this.setState({ reinitialized: true });
@@ -362,6 +382,10 @@ class Account extends React.Component {
 		this.setState({ profileSection: 2 });
 	};
 
+	handlePrizes = () => {
+		this.setState({ profileSection: 3 });
+	};
+
 	handleLogout() {
 		Lscache.flush();
 	}
@@ -379,6 +403,9 @@ class Account extends React.Component {
 			initialValues
 		} = this.props;
 
+		const customerId =
+			customerProperties && customerProperties.customer_settings.id;
+		const loyaltyUrl = `${process.env.REACT_APP_LOYALTY_URL}?userId=${customerId}`;
 		Lscache.flushExpired();
 
 		const accountInputField = 'account-field';
@@ -569,7 +596,7 @@ class Account extends React.Component {
 			tableStyle = {
 				align: 'center'
 			};
-
+			console.log('customer properties==========', customerProperties);
 			return (
 				<div className="account-container">
 					<div className="account-section">
@@ -590,6 +617,14 @@ class Account extends React.Component {
 								onClick={this.handleOrderHistory}
 							>
 								{text.orders}
+							</li>
+							<li
+								className={this.state.profileSection === 3 ? isActive : ''}
+								onClick={this.handlePrizes}
+							>
+								{/* <Link to='/loyalty'> */}
+								Prizes
+								{/* </Link > */}
 							</li>
 							<li>
 								<Link
@@ -619,7 +654,7 @@ class Account extends React.Component {
 									name={text.member_since}
 									value={new Date(
 										customerProperties.customer_settings.date_created
-									).toLocaleDateString('de-DE')}
+									).toLocaleDateString('en-US')}
 								/>
 								<ReadOnlyField
 									name={text.first_name}
@@ -960,16 +995,26 @@ class Account extends React.Component {
 							</div>
 						</div>
 					)}
+					{this.state.profileSection === 3 && (
+						<div className={accountProfileContainer}>
+							<iframe
+								title="loyaltyCard"
+								src={loyaltyUrl}
+								style={{ width: '100%' }}
+							/>
+						</div>
+					)}
 					<div className={accountButtonContainer}>
-						{this.state.profileSection !== 2 && (
-							<button
-								type="button"
-								onClick={this.handleContactsEdit}
-								className={accountEditButtonClass}
-							>
-								{text.edit}
-							</button>
-						)}
+						{this.state.profileSection !== 2 &&
+							this.state.profileSection !== 3 && (
+								<button
+									type="button"
+									onClick={this.handleContactsEdit}
+									className={accountEditButtonClass}
+								>
+									{text.edit}
+								</button>
+							)}
 						<button type="button" className={continueShoppingButton}>
 							<Link
 								to="/"
